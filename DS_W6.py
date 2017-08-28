@@ -31,10 +31,11 @@ for time in times:
     hour = time.split(':')
     hours[hour[0]] = hours.get(hour[0],0) + 1
 
-answer = list()    
-for key,val in hours.items():
-    newtup = (key,val)
-    answer.append(newtup)
+#answer = list()    
+#for key,val in hours.items():
+#    newtup = (key,val)
+#    answer.append(newtup)
+answer = hours.items()
 answer = sorted(answer)
 for key,val in answer:
     print(key,val)
